@@ -1,3 +1,12 @@
+<?php
+    $itemTitel = "Shooter";
+    $itemGenre = "Actie";
+    $itemCast = "Ryan Phillippe, Shantel VanSanten, Omar Epps";
+    $itemDirector = "John Hlavin";
+    $itemPlaytime = "60 minuten";
+    $itemYear = "2016";
+    $itemDescription = "Een hoog onderscheiden ex-marinier keert als sluipschutter terug om een moordaanslag op de president te voorkomen, maar wordt al gauw zelf van moord beschuldigd.";
+?>
 <!DOCTYPE html>
 <html lang="nl-nl">
     <head>
@@ -30,17 +39,17 @@
         <main>
             <div class="show-details">
                 <section class="show-data">
-                    <h1>Titel</h1>
+                    <h1><?=$itemTitel?></h1>
                     <ul>
-                        <li><em>Genre :</em> Actie</li>
-                        <li><em>Cast :</em> Ryan Phillippe, Shantel VanSanten, Cynthia Addai-Robinson & Omar Epps </li>
-                        <li><em>Regisseur :</em> John Hlavin</li>
-                        <li><em>Jaar :</em> 2016</li>
-                        <li><em>Speelduur :</em> ~60 minuten</li>
+                        <li><em>Genre :</em> <?=$itemGenre?></li>
+                        <li><em>Cast :</em> <?=$itemCast?> </li>
+                        <li><em>Regisseur :</em> <?=$itemDirector?></li>
+                        <li><em>Jaar :</em> <?=$itemYear?></li>
+                        <li><em>Speelduur :</em> <?=$itemPlaytime?></li>
                     </ul>
                 </section>
                 <section class="show-description">
-                    <p>Een hoog onderscheiden ex-marinier keert als sluipschutter terug om een moordaanslag op de president te voorkomen, maar wordt al gauw zelf van moord beschuldigd.</p>
+                    <p><?=$itemDescription?></p>
                 </section>
                 <section class="still-image">
                     <img src="../../../img/stills/series/actie/shooter.jpg" alt="Still frame Shooter" />
