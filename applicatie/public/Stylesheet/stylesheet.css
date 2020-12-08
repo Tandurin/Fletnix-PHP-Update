@@ -1,0 +1,87 @@
+main.stylesheet {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 420px 490px 680px;
+}
+
+div h1, h2, h3, p , a{
+    margin: 0 0;
+}
+
+.hover {
+    color: white;
+}
+
+hr {
+    width: 100%;
+}
+
+div.colors {
+    display: flex;
+}
+
+.chartreuse {
+    width: 250px;
+    height: 250px;
+    background: chartreuse;
+    border: 1px solid white;
+}
+
+.chartreuse p {
+    color: black;
+    padding: 100px;
+}
+
+.wit {
+    width: 250px;
+    height: 250px;
+    background: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.wit p {
+    color: black;
+    padding: 100px;
+}
+
+.grijs {
+    width: 250px;
+    height: 250px;
+    background: #282828;
+    border: 1px solid white;
+    color: white;
+}
+
+.grijs p {
+    color: white;
+    padding: 100px;
+}
+
+.zwart {
+    width: 250px;
+    height: 250px;
+    background: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.zwart p {
+    color: white;
+    padding: 100px;
+}
+
+button {
+    height: 2.5rem;
+    width: 250px;
+    background-color: chartreuse;
+    opacity: 1;
+    border-radius: 2.5rem;
+    margin-left: 50px;
+    margin-top: 50px;  
+}

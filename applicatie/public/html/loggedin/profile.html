@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl-nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>FletNix | Profiel</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../../css/all.min.css" />
+        <link rel="stylesheet" href="../../css/normalize.css" />
+        <link rel="stylesheet" href="../../css/styles.css" />
+        <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <header class="navbar">
+            <nav>
+                <a href="../../html/loggedin/index.html"><p class="logo-inline">FLETNIX</p></a>
+                <a href="../../html/loggedin/filmOverview.html">Kijken</a>
+                <a href="../../html/loggedin/subscription.html">Abonnementen</a>
+                <a href="../../html/loggedin/aboutus.html">Over Ons</a>
+                <div class="dropdown">
+                    <button class="final-item">David Gebruiker</button>
+                    <div class="dropdown-cnt">
+                        <a href="../../html/loggedin/profile.html">Profiel</a>
+                        <a href="../../index.html">Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flexcontainer">
+            <section class="flexcontainer form">
+                <div class="user-icon">
+                    <i class="fa fa-10x fa-user"></i>
+                </div>
+                <form>
+                    <h2>David Gebruiker</h2>
+                    <hr>
+                    <p>E-mailadres Oud:</p>
+                    <div class="inputfield">
+                        <label for="email">E-mailadres Oud</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="email" id="email" name="email" 
+                        placeholder="E-mailadres" title="E-mail moet juist geformuleerd zijn. Bijvoorbeeld: voorbeeld@host.nl" />
+                    </div>
+                    <p>E-mailadres Nieuw:</p>
+                    <div class="inputfield"> 
+                        <label for="email2">E-mailadres Nieuw</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="email" id="email2" name="email" 
+                        placeholder="E-mailadres" title="E-mail moet juist geformuleerd zijn. Bijvoorbeeld: voorbeeld@host.nl" />
+                    </div>
+                    <hr>
+                    <p>Voornaam</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="name">Voornaam</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input type="text" id="name" name="name" 
+                        placeholder="Voornaam" />
+                    </div>
+                    <p>Achternaam</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="surname">Achternaam</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input type="text" id="surname" name="surname" 
+                        placeholder="Achternaam" />
+                    </div>
+                    <hr>
+                    <p>Wachtwoord:</p>
+                    <div class="inputfield">
+                        <label for="pass">Wachtwoord</label>
+                        <i class="fa fa-key fa-lg form-icon"></i>
+                        <input required type="password" id="pass" name="pass" 
+                        placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." /> <!-- Pattern gevonden op htpp://html5pattern.com -->
+                    </div>
+                    <p>Herhaal Wachtwoord:</p>
+                    <div class="inputfield">
+                        <label for="pass2">Wachtwoord</label>
+                        <i class="fa fa-key fa-lg form-icon"></i>
+                        <input required type="password" id="pass2" name="pass" 
+                        placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." /> <!-- Pattern gevonden op htpp://html5pattern.com -->
+                    </div>
+                    <hr>
+                    <input type="submit" value="Wijzigen">
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="item">
+                <p class="logo-inline">FLETNIX</p>
+            </div>
+            <p>
+                ©2020
+            </p>
+        </footer>
+    </body>
+</html>
