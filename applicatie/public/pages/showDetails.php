@@ -23,21 +23,7 @@ $itemArray =    array(  "Titel" => "Shooter",
         <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon" />
     </head>
     <body class="detailspage">
-        <header class="navbar">
-            <nav>
-                <a href="../../../html/loggedin/index.html"><p class="logo-inline">FLETNIX</p></a>
-                <a href="../../../html/loggedin/filmOverview.html">Kijken</a>
-                <a href="../../../html/loggedin/subscription.html">Abonnementen</a>
-                <a href="../../../html/loggedin/aboutus.html">Over Ons</a>
-                <div class="dropdown">
-                    <button class="final-item">David Gebruiker</button>
-                    <div class="dropdown-cnt">
-                        <a href="../../../html/loggedin/profile.html">Profiel</a>
-                        <a href="../../../index.html">Logout</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php require_once('../header.php')?>
 
         <main>
             <div class="show-details">
@@ -63,13 +49,6 @@ $itemArray =    array(  "Titel" => "Shooter",
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="item">
-                <p class="logo-inline">FLETNIX</p>
-            </div>
-            <p>
-                ©2020
-            </p>
-        </footer>
+        <?php require_once('../footer.php')?>
     </body>
 </html>

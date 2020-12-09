@@ -13,15 +13,7 @@
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <header class="navbar">
-            <nav>
-                <a href="../index.html"><p class="logo-inline">FLETNIX</p></a>
-                <a href="../html/filmOverview.html">Kijken</a>
-                <a href="../html/subscription.html">Abonnementen</a>
-                <a href="../html/aboutus.html">Over Ons</a>
-                <a class="final-item" href="../html/login.html">Log In</a>
-            </nav>
-        </header>
+    <?php require_once('../header.php')?>
 
         <main>
             <section class="searchresults flexcontainer">
@@ -35,13 +27,6 @@
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="item">
-                <p class="logo-inline">FLETNIX</p>
-            </div>
-            <p>
-                ©2020
-            </p>
-        </footer>
+        <?php require_once('../footer.php')?>
     </body>
 </html>
