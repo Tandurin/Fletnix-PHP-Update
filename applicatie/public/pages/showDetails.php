@@ -1,18 +1,21 @@
 <?php
-    $itemTitel = "Shooter";
-    $itemGenre = "Actie";
-    $itemCast = "Ryan Phillippe, Shantel VanSanten, Omar Epps";
-    $itemDirector = "John Hlavin";
-    $itemPlaytime = "60 minuten";
-    $itemYear = "2016";
-    $itemDescription = "Een hoog onderscheiden ex-marinier keert als sluipschutter terug om een moordaanslag op de president te voorkomen, maar wordt al gauw zelf van moord beschuldigd.";
+require_once('../functions/minutenNaarUur.php');
+
+$itemArray =    array(  "Titel" => "Shooter",
+                        "Genre" => "Actie", 
+                        "Cast" => "Ryan Phillippe, Shantel VanSanten, Omar Epps", 
+                        "Regisseur" => "John Hlavin", 
+                        "Speelduur" => 62, 
+                        "Jaar" => 2016,
+                        "Omschrijving" => "Een hoog onderscheiden ex-marinier keert als sluipschutter terug om een moordaanslag op de president te voorkomen, maar wordt al gauw zelf van moord beschuldigd."
+                    );
 ?>
 <!DOCTYPE html>
 <html lang="nl-nl">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>FletNix | Shooter</title>
+        <title>FletNix | <?=$itemArray["Titel"]?></title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../../../css/normalize.css" />
@@ -39,17 +42,17 @@
         <main>
             <div class="show-details">
                 <section class="show-data">
-                    <h1><?=$itemTitel?></h1>
+                    <h1><?=$itemArray["Titel"]?></h1>
                     <ul>
-                        <li><em>Genre :</em> <?=$itemGenre?></li>
-                        <li><em>Cast :</em> <?=$itemCast?> </li>
-                        <li><em>Regisseur :</em> <?=$itemDirector?></li>
-                        <li><em>Jaar :</em> <?=$itemYear?></li>
-                        <li><em>Speelduur :</em> <?=$itemPlaytime?></li>
+                        <li><em>Genre :</em> <?=$itemArray["Genre"]?></li>
+                        <li><em>Cast :</em> <?=$itemArray["Cast"]?> </li>
+                        <li><em>Regisseur :</em> <?=$itemArray["Regisseur"]?></li>
+                        <li><em>Jaar :</em> <?=$itemArray["Jaar"]?></li>
+                        <li><em>Speelduur :</em> <?=minutenNaarUur($itemArray["Speelduur"])?></li>
                     </ul>
                 </section>
                 <section class="show-description">
-                    <p><?=$itemDescription?></p>
+                    <p><?=$itemArray["Omschrijving"]?></p>
                 </section>
                 <section class="still-image">
                     <img src="../../../img/stills/series/actie/shooter.jpg" alt="Still frame Shooter" />
