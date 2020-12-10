@@ -1,3 +1,7 @@
+<?php
+    require_once('../footer.php');
+    require_once('../header.php');
+?>
 <!DOCTYPE html>
 <html lang="nl-nl">
     <head>
@@ -12,15 +16,7 @@
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <header class="navbar">
-            <nav>
-                <a href="../index.html"><p class="logo-inline">FLETNIX</p></a>
-                <a href="../html/filmOverview.html">Kijken</a>
-                <a href="../html/subscription.html">Abonnementen</a>
-                <a href="../html/aboutus.html">Over Ons</a>
-                <a class="final-item" href="../html/login.html">Log In</a>
-            </nav>
-        </header>
+        <?=PAGE_HEADER?>
 
         <main class="flexcontainer">
             <section class="form">
@@ -44,5 +40,6 @@
                 </form>
             </section>
         </main>
+        <?=PAGE_FOOTER?>
     </body>
 </html>
