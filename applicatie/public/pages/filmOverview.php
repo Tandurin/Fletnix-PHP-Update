@@ -1,4 +1,6 @@
 <?php
+    require_once('../footer.php');
+    require_once('../header.php');
 ?>
 <!DOCTYPE html>
 <html lang="nl-nl">
@@ -13,7 +15,7 @@
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <?php require_once('../header.php')?>
+        <?=PAGE_HEADER?>
 
         <main class="overview-grid">
             <section class="navbar2">
@@ -61,6 +63,6 @@
             </div>
         </main>
 
-        <?php require_once('../footer.php')?>
+        <?=PAGE_FOOTER?>
     </body>
 </html>

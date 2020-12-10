@@ -1,5 +1,7 @@
 <?php
 require_once('../functions/minutenNaarUur.php');
+require_once('../footer.php');
+require_once('../header.php');
 
 $itemArray =    array(  "Titel" => "Shooter",
                         "Genre" => "Actie", 
@@ -23,7 +25,7 @@ $itemArray =    array(  "Titel" => "Shooter",
         <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon" />
     </head>
     <body class="detailspage">
-        <?php require_once('../header.php')?>
+        <?=PAGE_HEADER?>
 
         <main>
             <div class="show-details">
@@ -49,6 +51,6 @@ $itemArray =    array(  "Titel" => "Shooter",
             </div>
         </main>
 
-        <?php require_once('../footer.php')?>
+        <?=PAGE_FOOTER?>
     </body>
 </html>
