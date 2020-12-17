@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
 	require_once("globalInfo/global.php");
     require_once("functions/components.php");
     require_once('footer.php');

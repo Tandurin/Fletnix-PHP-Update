@@ -11,7 +11,7 @@
         $copyrightLabel = "$copyJaar - $huidigJaar";
     }
 
-    define('PAGE_FOOTER',   "<footer class=\"footer\">
+    define('PAGE_FOOTER',   "<footer>
                                 <div class=\"item\">
                                     <p class=\"logo-inline\">{$globalInfo['siteName']}</p>
                                 </div>

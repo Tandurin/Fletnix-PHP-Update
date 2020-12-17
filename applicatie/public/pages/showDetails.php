@@ -1,16 +1,18 @@
 <?php
-require_once('../functions/minutenNaarUur.php');
-require_once('../footer.php');
-require_once('../header.php');
+    session_start();
 
-$itemArray =    array(  "Titel" => "Shooter",
+    require_once('../functions/minutenNaarUur.php');
+    require_once('../footer.php');
+    require_once('../header.php');
+
+    $itemArray =    [   "Titel" => "Shooter",
                         "Genre" => "Actie", 
                         "Cast" => "Ryan Phillippe, Shantel VanSanten, Omar Epps", 
                         "Regisseur" => "John Hlavin", 
                         "Speelduur" => 62, 
                         "Jaar" => 2016,
                         "Omschrijving" => "Een hoog onderscheiden ex-marinier keert als sluipschutter terug om een moordaanslag op de president te voorkomen, maar wordt al gauw zelf van moord beschuldigd."
-                    );
+];
 ?>
 <!DOCTYPE html>
 <html lang="nl-nl">
